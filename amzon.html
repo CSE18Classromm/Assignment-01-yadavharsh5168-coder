@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head><style>*{
+    margin:0;
+    padding:0;
+    font-family:arial;
+    border:border-box;
+}
+.navbar{
+    height: 50px;
+  background-color:#898980;
+  color:white;
+  display:flex;
+  justify-content:space-evenly ;
+}.navlogo{height: 50px;
+  width:100px;
+}
+.logo{
+  background-image:url("vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png");
+  background-size: cover;
+  
+  height:50px;
+  width:100%;
+} .border{
+  border: 2px solod bisque;
+}
+.border:hover{
+  border:2px solid white;
+}
+/*box2*/
+.firstlocation{color:aliceblue;
+font-size:0.85px;
+
+}.second{font-size: 1px;}
+.navadress{
+   margin-left: 30px;
+  margin-top: 30px;
+}/*box3*/
+.navsearch{ justify-content: space-evenly;width: 620px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  display:flex;
+height:40px}
+.searchselect{
+  background-color: aliceblue;
+  width: 95px;
+  text-align:center;border-radius: 4px;
+}.searchicon{
+  background-color: rgb(239, 222, 39);
+  align-items: center;
+  width:55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.7rem;
+}.harsh{border-radius:6px;
+text-align:center;
+border:none;
+width:40px;
+ }.searchinput{width:100%;
+  font-size: 1rem;
+
+}/*box4*/
+span{
+  font-size: 0.7 rem;
+
+}.navsecond{
+  font-size: 0.85 rem;
+  font-weight: 700;
+}
+/*box5*/
+.navreturn{font-weight: 700;
+
+}.navcart{
+  font-size: 30px;
+  font-weight:700;
+}
+header{display:flex;
+justify-content: space-evenly;
+background-color: black;
+height:50px;
+color:aliceblue}
+.details{
+background-color: aqua;color:black;}
+.hero{background-image:url(../amzon.jpg);
+height: 600px;
+ width: 100%;
+background-size: cover;
+}.shopsection{
+height:300px ;
+width: 200px;
+border: 2px solid black;
+background-color: aliceblue;
+}span{
+display:flex;
+justify-content: space-evenly;
+
+}
+     
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.4;
+    }
+
+    /* Top utility bar */
+    .topbar{
+      background:var(--brand);
+      color:#fff;
+      font-size:14px;
+    }
+    .topbar .container{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:8px 16px;
+      gap:12px;
+    }
+    .topbar .left, .topbar .right{
+      display:flex; align-items:center; gap:16px;
+    }
+    .topbar a{ color:#fff; text-decoration:none }
+    .lang-pill{
+      border:1px solid rgba(255,255,255,0.25);
+      padding:4px 8px; border-radius:999px; font-weight:500;
+    }
+
+    /* Main header with logo + search + account */
+    header{
+      background:#131921; color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .header-inner{
+      max-width:var(--max); margin:0 auto;
+      display:grid; grid-template-columns: 160px 1fr 320px;
+      align-items:center; gap:16px;
+      padding:12px 16px;
+    }
+    .brand{
+      font-weight:700; font-size:20px; letter-spacing:0.5px;
+    }
+    .brand .in{ color:#ff9900 }
+    .search{
+      display:flex; align-items:center; gap:0;
+      background:#fff; border-radius:8px; overflow:hidden;
+    }
+    .search select{
+      background:#f3f3f3; border:none; padding:10px; font-size:14px; min-width:90px;
+    }
+    .search input{
+      flex:1; border:none; padding:12px 12px; font-size:15px;
+    }
+    .search button{
+      background:var(--accent); border:none; padding:0 16px; font-weight:600; cursor:pointer;
+    }
+    .account{
+      display:flex; align-items:center; gap:20px; justify-content:flex-end; font-size:14px;
+    }
+    .account .cta{
+      background:#37475a; padding:8px 12px; border-radius:8px;
+    }
+
+    /* Location strip */
+    .location-strip{
+      background:#fafafa; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;
+    }
+    .location-inner{
+      max-width:var(--max); margin:0 auto; display:flex; align-items:center; gap:12px;
+      padding:10px 16px; font-size:14px;
+    } 
+
+    /* Nav shortcuts */
+    .nav{
+      background:#232f3e; color:#fff; font-size:14px;
+    }
+    .nav .container{
+      max-width:var(--max); margin:0 auto; padding:8px 16px;
+      display:flex; gap:18px; flex-wrap:wrap;
+    }
+    .nav a{ color:#fff; text-decoration:none; opacity:0.95 }
+    .nav a:hover{ opacity:1 }
+
+    /* Page grid sections */
+    main{
+      max-width:var(--max);;
+      padding:0 16px;
+      display:grid;
+      grid-template-columns: repeat(1, 4fr);
+      width: 100%;
+      gap:var(--gap);
+    }
+    .card{
+      background:var(--surface);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:16px;
+      display:flex; flex-direction:column; gap:12px;
+      min-height:260px;
+    }
+    .card h3{
+      font-size:18px; margin:0 0 8px 0;
+    }
+    .card .grid{
+      display:grid; grid-template-columns: repeat(2,1fr); gap:10px;
+    }
+    .tile{
+      background:#f8f8f8; border-radius:8px; padding:10px; text-align:center; display:flex; flex-direction:column; gap:8px;
+    }
+    .tile img{
+      width:50%; height:100px; object-fit:cover; border-radius:6px; background:#eaeaea;
+    }
+    .tile span{ font-size:13px; color:var(--muted) }
+    .card .link-row{
+      margin-top:auto; display:flex; justify-content:flex-start;
+    }
+    .link{
+      color:var(--link); text-decoration:none; font-weight:600; font-size:14px;
+    }
+
+    /* Full-width promo card */
+    .promo{
+      grid-column: span 2;
+      background:linear-gradient(90deg, #eef6ff, #fff);
+      min-height:260px;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:24px;
+    }
+    .promo .copy{
+      max-width:60%;
+    }
+    .promo h3{ margin:0 0 8px 0 }
+    .promo p{ margin:0 0 12px 0; color:var(--muted) }
+    .promo .cta{
+      background:var(--brand); color:#fff; text-decoration:none; padding:10px 14px; border-radius:8px; font-weight:600;
+    }
+    .promo img{
+      width:35%; max-width:360px; height:220px; object-fit:cover; border-radius:12px; background:#ddd;
+    }
+
+    /* Responsive */
+    @media (max-width:1024px){
+      .header-inner{ grid-template-columns: 140px 1fr 260px; }
+      main{ grid-template-columns: repeat(3,1fr); }
+      .promo{ grid-column: span 3; }
+      .promo .copy{ max-width:55% }
+    }
+    @media (max-width:768px){
+      .header-inner{ grid-template-columns: 1fr; gap:12px }
+      .account{ justify-content:flex-start }
+      main{ grid-template-columns: repeat(2,1fr); }
+      .promo{ grid-column: span 2; flex-direction:column; gap:16px; text-align:center }
+      .promo .copy{ max-width:100% }
+      .promo img{ width:100%; max-width:100%; height:180px }
+    }
+    @media (max-width:520px){
+      .topbar .container, .location-inner{ padding:8px 12px }
+      .nav .container{ padding:8px 12px }
+      main{ grid-template-columns: 1fr; }
+      .promo{ grid-column: span 1 }
+    }
+</style>
+<body>  
+<div class="navbar"><div class=" navlogo border"><div class="logo"></div></div>
+<div class="navadress"><p class="firstlocation">Deliver to</p>
+<div><p class="second"><i class="fa-solid fa-location-crosshairs"></div></i>India</p></div> 
+<div class="navsearch"><select class="harsh"name="" id=""><option value="">All</option><option value="">ahrsh yadv</option></select> 
+<input height="30px" width="50px" class="searchinput" type="text" placeholder="searchamazon"><div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+<div class="signin"><p><span>Hello,sign in</span></p>
+    <p class="navsecond">account & lists-</p>
+
+</div><div class="signin"><p><span>return</span></p>
+    <p class="navreturn">&order</p>
+
+</div> <div class="navcart"><i class="fa-solid fa-cart-flatbed"></i> cart</div></div>
+<header> <div class="panel"><div class="panel all"><i class="fa-solid fa-bars"></i><p>All</p></div></div>
+ 
+<p>today deals</p>
+<p>customer services</p>
+<p>registry</p>
+<p>gifft cards</p>
+<p>sell</p>
+ <div class="details">shop in details</div> 
+</header>
+ <div class="hero"><img src="am.jpg" alt=""></div>
+ 
+
+   
+ 
+  <nav class="nav">
+    <div class="container">
+      <a href="#">All</a>
+      <a href="#">Microwaves</a>
+      <a href="#">Washing machines</a>
+      <a href="#">Office furniture</a>
+      <a href="#">For Business Purchases</a>
+      <a href="#">See more</a>
+    </div>
+  </nav>
+
+ 
+  <main>
+    
+    <section class="card">
+      <h3>Starting ₹149 | Headphones</h3>
+      <div class="grid">
+        <div class="tile">
+          <img alt="boAt headphones" src= "lap.jpg" />
+          <strong>boAt</strong>
+          <span>Starting ₹249</span>
+        </div>
+        <div class="tile">
+          <img alt="boult headphones" src="lap.jpg" />
+          <strong>boult</strong>
+          <span>Starting ₹349</span>
+        </div>
+        <div class="tile">
+          <img alt="Noise headphones" src="lap.jpg" />
+          <strong>Noise</strong>
+          <span>Starting ₹649</span>
+        </div>
+        <div class="tile">
+          <img alt="Zebronics headphones" src="vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png" />
+          <strong>Zebronics</strong>
+          <span>Starting ₹149</span>
+        </div>
+      </div>
+      <div class="link-row">
+        <a class="link" href="#">See all offers</a>
+      </div>
+    </section>
+    <section class="card">
+      <h3>Starting ₹49 | Deals on home essentials</h3>
+      <div class="grid">
+        <div class="tile">
+          <img alt="Cleaning supplies" src= "vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png" />
+          <strong>Cleaning supplies</strong>
+        </div>
+        <div class="tile">
+          <img alt="Bathroom accessories" src="watch.jpg" />
+          <strong>Bathroom accessories</strong>
+        </div>
+        <div class="tile">
+          <img alt="Home tools" src=  "watch.jpgs" />
+          <strong>Home tools</strong>
+        </div>
+        <div class="tile">
+          <img alt="Wallpapers" src=" headphone.jpg" />
+          <strong>Wallpapers</strong>
+        </div>
+      </div>
+      <div class="link-row">
+        <a class="link" href="#">Explore all</a>
+      </div>
+    </section>
+
+    
+    <section class="card">
+      <h3>Automotive essentials | Up to 60% off</h3>
+      <div class="grid">
+        <div class="tile">
+          <img alt="Cleaning accessories" src=" headphone.jpg" />
+          <strong>Cleaning accessories</strong>
+        </div>
+        <div class="tile">
+          <img alt="Tyre & rim care" src="  am.jpg" />
+          <strong>Tyre &amp; rim care</strong>
+        </div>
+        <div class="tile">
+          <img alt="Helmets" src=" " />
+          <strong>Helmets</strong>
+        </div>
+        <div class="tile">
+          <img alt="Vacuum cleaner" src="black-camera-lens-brown-wooden-table.jpg" />
+          <strong>Vacuum cleaner</strong>
+        </div>
+      </div>
+      <div class="link-row">
+        <a class="link" href="#">See more</a>
+      </div>
+    </section>
+ 
+    <section class="promo card">
+      <div class="copy">
+        <h3>Starting ₹70,348 | From daily commutes to weekend thrills</h3>
+        <p>Discover bikes and scooters that fit your ride style and budget. Flexible offers and easy checkout.</p>
+        <a class="cta" href="#">See all offers</a>
+      </div>
+      <img alt="Commute to weekend thrills" src="black-camera-lens-brown-wooden-table.jpg ">
+    </section>
+ 
+    <section class="card">
+      <h3>Min. 50% off | Office furniture</h3>
+      <div class="grid">
+        <div class="tile">
+          <img alt="Ergonomic chair" src="1343746.png" />
+          <strong>Ergonomic chairs</strong>
+        </div>
+        <div class="tile">
+          <img alt="Office desk" src="   938193.jpg" />
+          <strong>Office desks</strong>
+        </div>
+        <div class="tile">
+          <img alt="Storage" src=" " />
+          <strong>Storage units</strong>
+        </div>
+        <div class="tile">
+          <img alt="Lighting" src="vecteezy_amazon-logo-png-amazon-icon-transparent-png_19766240.png" />
+          <strong>Office lighting</strong>
+        </div>
+      </div>
+      <div class="link-row">
+        <a class="link" href="#">Shop now</a>
+      </div>
+    </section>
+
+  </main>
+ 
+  <footer style="max-width:var(--max); margin:24px auto; padding:16px; text-align:center; color:var(--muted);">
+    © 2025 Your Store. This is a demo layout inspired by common ecommerce patterns.
+  </footer>
+</body>
+</html>
+
+
+
+ 
+ 
+ 
+ 
